@@ -1,0 +1,4607 @@
+{
+  "name": "WaypointCompassCompact",
+  "revision": "C1",
+  "size_mm": [
+    54,
+    40
+  ],
+  "display_center_mm": [
+    27,
+    20
+  ],
+  "layers": 4,
+  "parts": [
+    {
+      "ref": "U1",
+      "value": "ESP32-S3-MINI-1U-N4R2",
+      "libsym": "RF_Module:ESP32-S3-MINI-1U",
+      "footprint": "RF_Module:ESP32-S2-MINI-1U",
+      "nets": {
+        "1": "GND",
+        "2": "GND",
+        "3": "3V3",
+        "4": "BOOT",
+        "5": "BAT_ADC",
+        "6": "BUTTON_2",
+        "10": "TFT_RST",
+        "12": "I2C_SDA",
+        "13": "I2C_SCL",
+        "14": "TFT_SCK",
+        "15": "TFT_MOSI",
+        "16": "TFT_CS",
+        "17": "TFT_DC",
+        "23": "USB_M_MCU",
+        "24": "USB_P_MCU",
+        "39": "GPS_RX",
+        "40": "GPS_TX",
+        "45": "MCU_EN",
+        "42": "GND",
+        "43": "GND",
+        "46": "GND",
+        "47": "GND",
+        "48": "GND",
+        "49": "GND",
+        "50": "GND",
+        "51": "GND",
+        "52": "GND",
+        "53": "GND",
+        "54": "GND",
+        "55": "GND",
+        "56": "GND",
+        "57": "GND",
+        "58": "GND",
+        "59": "GND",
+        "60": "GND",
+        "61": "GND",
+        "62": "GND",
+        "63": "GND",
+        "64": "GND",
+        "65": "GND",
+        "7": null,
+        "8": null,
+        "9": null,
+        "11": null,
+        "18": null,
+        "19": null,
+        "20": null,
+        "21": null,
+        "22": null,
+        "25": null,
+        "26": null,
+        "27": null,
+        "28": null,
+        "29": null,
+        "30": null,
+        "31": null,
+        "32": null,
+        "33": null,
+        "34": null,
+        "35": null,
+        "36": null,
+        "37": null,
+        "38": null,
+        "41": null,
+        "44": null
+      },
+      "at": [
+        24,
+        20
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "ESP32-S3-MINI-1U-N4R2",
+      "note": "Optional external 2.4 GHz antenna; no RF used by compass firmware",
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "type": "power_in",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "3V3",
+          "type": "power_in",
+          "at": [
+            "0",
+            "30.48",
+            "270"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "IO0",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "20.32",
+            "0"
+          ]
+        },
+        {
+          "number": "5",
+          "name": "IO1",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "17.78",
+            "0"
+          ]
+        },
+        {
+          "number": "6",
+          "name": "IO2",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "15.24",
+            "0"
+          ]
+        },
+        {
+          "number": "7",
+          "name": "IO3",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "12.7",
+            "0"
+          ]
+        },
+        {
+          "number": "8",
+          "name": "IO4",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "10.16",
+            "0"
+          ]
+        },
+        {
+          "number": "9",
+          "name": "IO5",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "7.62",
+            "0"
+          ]
+        },
+        {
+          "number": "10",
+          "name": "IO6",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "5.08",
+            "0"
+          ]
+        },
+        {
+          "number": "11",
+          "name": "IO7",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "12",
+          "name": "IO8",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "13",
+          "name": "IO9",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "14",
+          "name": "IO10",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-5.08",
+            "0"
+          ]
+        },
+        {
+          "number": "15",
+          "name": "IO11",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-7.62",
+            "0"
+          ]
+        },
+        {
+          "number": "16",
+          "name": "IO12",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-10.16",
+            "0"
+          ]
+        },
+        {
+          "number": "17",
+          "name": "IO13",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-12.7",
+            "0"
+          ]
+        },
+        {
+          "number": "18",
+          "name": "IO14",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-15.24",
+            "0"
+          ]
+        },
+        {
+          "number": "19",
+          "name": "IO15",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-17.78",
+            "0"
+          ]
+        },
+        {
+          "number": "20",
+          "name": "IO16",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-20.32",
+            "0"
+          ]
+        },
+        {
+          "number": "21",
+          "name": "IO17",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-22.86",
+            "0"
+          ]
+        },
+        {
+          "number": "22",
+          "name": "IO18",
+          "type": "bidirectional",
+          "at": [
+            "-15.24",
+            "-25.4",
+            "0"
+          ]
+        },
+        {
+          "number": "23",
+          "name": "USB_D-",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "17.78",
+            "180"
+          ]
+        },
+        {
+          "number": "24",
+          "name": "USB_D+",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "25",
+          "name": "IO21",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "12.7",
+            "180"
+          ]
+        },
+        {
+          "number": "26",
+          "name": "IO26",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "27",
+          "name": "IO47",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-22.86",
+            "180"
+          ]
+        },
+        {
+          "number": "28",
+          "name": "IO33",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "7.62",
+            "180"
+          ]
+        },
+        {
+          "number": "29",
+          "name": "IO34",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "5.08",
+            "180"
+          ]
+        },
+        {
+          "number": "30",
+          "name": "IO48",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-25.4",
+            "180"
+          ]
+        },
+        {
+          "number": "31",
+          "name": "IO35",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "32",
+          "name": "IO36",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "0",
+            "180"
+          ]
+        },
+        {
+          "number": "33",
+          "name": "IO37",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "34",
+          "name": "IO38",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-5.08",
+            "180"
+          ]
+        },
+        {
+          "number": "35",
+          "name": "IO39",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-7.62",
+            "180"
+          ]
+        },
+        {
+          "number": "36",
+          "name": "IO40",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "37",
+          "name": "IO41",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-12.7",
+            "180"
+          ]
+        },
+        {
+          "number": "38",
+          "name": "IO42",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "39",
+          "name": "TXD0",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "25.4",
+            "180"
+          ]
+        },
+        {
+          "number": "40",
+          "name": "RXD0",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "22.86",
+            "180"
+          ]
+        },
+        {
+          "number": "41",
+          "name": "IO45",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-17.78",
+            "180"
+          ]
+        },
+        {
+          "number": "42",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "43",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "44",
+          "name": "IO46",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-20.32",
+            "180"
+          ]
+        },
+        {
+          "number": "45",
+          "name": "EN",
+          "type": "input",
+          "at": [
+            "-15.24",
+            "25.4",
+            "0"
+          ]
+        },
+        {
+          "number": "46",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "47",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "48",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "49",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "50",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "51",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "52",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "53",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "54",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "55",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "56",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "57",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "58",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "59",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "60",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "61",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "62",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "63",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "64",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        },
+        {
+          "number": "65",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-30.48",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "U2",
+      "value": "LIS2DH12TR",
+      "libsym": null,
+      "footprint": "Package_LGA:LGA-12_2x2mm_P0.5mm",
+      "nets": {
+        "1": "I2C_SCL",
+        "2": "3V3",
+        "3": "GND",
+        "4": "I2C_SDA",
+        "5": "GND",
+        "6": "GND",
+        "7": "GND",
+        "8": "GND",
+        "9": "3V3",
+        "10": "3V3",
+        "11": null,
+        "12": null
+      },
+      "at": [
+        11,
+        23
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "LIS2DH12TR",
+      "note": "I2C 0x18; +X must be mapped to device front",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SCL",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "CS",
+          "type": "input"
+        },
+        {
+          "number": "3",
+          "name": "SA0",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "SDA",
+          "type": "bidirectional"
+        },
+        {
+          "number": "5",
+          "name": "RES_GND",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "7",
+          "name": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "9",
+          "name": "VDD",
+          "type": "power_in"
+        },
+        {
+          "number": "10",
+          "name": "VDD_IO",
+          "type": "power_in"
+        },
+        {
+          "number": "11",
+          "name": "INT2",
+          "type": "output"
+        },
+        {
+          "number": "12",
+          "name": "INT1",
+          "type": "output"
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "U3",
+      "value": "LIS2MDLTR",
+      "libsym": "Sensor_Magnetic:LIS2MDL",
+      "footprint": "Package_LGA:LGA-12_2x2mm_P0.5mm",
+      "nets": {
+        "1": "I2C_SCL",
+        "3": "3V3",
+        "4": "I2C_SDA",
+        "5": "MAG_C1",
+        "6": "GND",
+        "8": "GND",
+        "9": "3V3",
+        "10": "3V3",
+        "2": null,
+        "7": null,
+        "11": null,
+        "12": null
+      },
+      "at": [
+        11,
+        17
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "LIS2MDLTR",
+      "note": "I2C 0x1E; NC pins 2/11/12 left open",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SCL/SPC",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "NC",
+          "type": "no_connect",
+          "at": [
+            "-10.16",
+            "-5.08",
+            "0"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "~{CS}",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "5.08",
+            "0"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "SDA/SDI/SDO",
+          "type": "bidirectional",
+          "at": [
+            "-12.7",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "5",
+          "name": "C1",
+          "type": "power_out",
+          "at": [
+            "12.7",
+            "-2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "6",
+          "name": "GND",
+          "type": "power_in",
+          "at": [
+            "0",
+            "-12.7",
+            "90"
+          ]
+        },
+        {
+          "number": "7",
+          "name": "DRDY",
+          "type": "output",
+          "at": [
+            "12.7",
+            "5.08",
+            "180"
+          ]
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-12.7",
+            "90"
+          ]
+        },
+        {
+          "number": "9",
+          "name": "Vdd",
+          "type": "power_in",
+          "at": [
+            "0",
+            "12.7",
+            "270"
+          ]
+        },
+        {
+          "number": "10",
+          "name": "Vdd_IO",
+          "type": "power_in",
+          "at": [
+            "2.54",
+            "12.7",
+            "270"
+          ]
+        },
+        {
+          "number": "11",
+          "name": "NC",
+          "type": "no_connect",
+          "at": [
+            "-10.16",
+            "-7.62",
+            "0"
+          ]
+        },
+        {
+          "number": "12",
+          "name": "NC",
+          "type": "no_connect",
+          "at": [
+            "10.16",
+            "-7.62",
+            "180"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "U4",
+      "value": "BQ24074RGTR",
+      "libsym": "Battery_Management:BQ24074RGT",
+      "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "nets": {
+        "1": "BAT_TS",
+        "2": "VBAT",
+        "3": "VBAT",
+        "4": "GND",
+        "5": "GND",
+        "6": "VBUS",
+        "7": "PGOOD_N",
+        "8": "GND",
+        "9": "CHG_N",
+        "10": "SYS",
+        "11": "SYS",
+        "12": "CHG_ILIM",
+        "13": "VBUS",
+        "14": "CHG_TMR",
+        "16": "CHG_ISET",
+        "17": "GND",
+        "15": null
+      },
+      "at": [
+        40,
+        10
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "BQ24074RGTR",
+      "note": "4.2 V single-cell; fixed 500 mA USB input mode; 100 mA default charge",
+      "pins": [
+        {
+          "number": "1",
+          "name": "TS",
+          "type": "passive",
+          "at": [
+            "12.7",
+            "-2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "BAT",
+          "type": "power_out",
+          "at": [
+            "12.7",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "BAT",
+          "type": "passive",
+          "at": [
+            "12.7",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "~{CE}",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "5.08",
+            "0"
+          ]
+        },
+        {
+          "number": "5",
+          "name": "EN2",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "-2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "6",
+          "name": "EN1",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "7",
+          "name": "~{PGOOD}",
+          "type": "open_collector",
+          "at": [
+            "12.7",
+            "-7.62",
+            "180"
+          ]
+        },
+        {
+          "number": "8",
+          "name": "VSS",
+          "type": "power_in",
+          "at": [
+            "0",
+            "-15.24",
+            "90"
+          ]
+        },
+        {
+          "number": "9",
+          "name": "~{CHG}",
+          "type": "open_collector",
+          "at": [
+            "12.7",
+            "-10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "10",
+          "name": "OUT",
+          "type": "power_out",
+          "at": [
+            "12.7",
+            "10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "11",
+          "name": "OUT",
+          "type": "passive",
+          "at": [
+            "12.7",
+            "10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "12",
+          "name": "ILIM",
+          "type": "passive",
+          "at": [
+            "-12.7",
+            "-7.62",
+            "0"
+          ]
+        },
+        {
+          "number": "13",
+          "name": "IN",
+          "type": "power_in",
+          "at": [
+            "0",
+            "15.24",
+            "270"
+          ]
+        },
+        {
+          "number": "14",
+          "name": "TMR",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "15",
+          "name": "ITERM",
+          "type": "input",
+          "at": [
+            "-12.7",
+            "10.16",
+            "0"
+          ]
+        },
+        {
+          "number": "16",
+          "name": "ISET",
+          "type": "passive",
+          "at": [
+            "-12.7",
+            "-10.16",
+            "0"
+          ]
+        },
+        {
+          "number": "17",
+          "name": "VSS",
+          "type": "passive",
+          "at": [
+            "0",
+            "-15.24",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "U5",
+      "value": "TPS63060DSCR",
+      "libsym": "Regulator_Switching:TPS63060",
+      "footprint": "Package_SON:Texas_S-PWSON-N10",
+      "nets": {
+        "1": "BB_L1",
+        "2": "SYS",
+        "3": "POWER_EN",
+        "4": "SYS",
+        "6": "BB_AUX",
+        "7": "GND",
+        "8": "BB_FB",
+        "9": "3V3",
+        "10": "BB_L2",
+        "11": "GND",
+        "5": null
+      },
+      "at": [
+        39.5,
+        22.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "TPS63060DSCR",
+      "note": "3.3 V buck-boost; forced PWM for predictable sensor noise",
+      "pins": [
+        {
+          "number": "1",
+          "name": "L1",
+          "type": "input",
+          "at": [
+            "-10.16",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "VIN",
+          "type": "power_in",
+          "at": [
+            "-10.16",
+            "10.16",
+            "0"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "EN",
+          "type": "input",
+          "at": [
+            "-10.16",
+            "5.08",
+            "0"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "PS/SYNC",
+          "type": "input",
+          "at": [
+            "-10.16",
+            "2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "5",
+          "name": "PG",
+          "type": "output",
+          "at": [
+            "10.16",
+            "-7.62",
+            "180"
+          ]
+        },
+        {
+          "number": "6",
+          "name": "VAUX",
+          "type": "passive",
+          "at": [
+            "10.16",
+            "-5.08",
+            "180"
+          ]
+        },
+        {
+          "number": "7",
+          "name": "GND",
+          "type": "power_in",
+          "at": [
+            "-2.54",
+            "-15.24",
+            "90"
+          ]
+        },
+        {
+          "number": "8",
+          "name": "FB",
+          "type": "input",
+          "at": [
+            "10.16",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "9",
+          "name": "VOUT",
+          "type": "power_out",
+          "at": [
+            "10.16",
+            "10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "10",
+          "name": "L2",
+          "type": "input",
+          "at": [
+            "-10.16",
+            "-10.16",
+            "0"
+          ]
+        },
+        {
+          "number": "11",
+          "name": "PGND",
+          "type": "power_in",
+          "at": [
+            "0",
+            "-15.24",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "U6",
+      "value": "TPS61023DRLR",
+      "libsym": null,
+      "footprint": "Package_TO_SOT_SMD:SOT-563",
+      "nets": {
+        "1": "GPS_FB",
+        "2": "POWER_EN",
+        "3": "SYS",
+        "4": "GND",
+        "5": "GPS_SW",
+        "6": "GPS_5V"
+      },
+      "at": [
+        48.5,
+        21.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "TPS61023DRLR",
+      "note": "5 V GPS breakout supply while running from battery",
+      "pins": [
+        {
+          "number": "1",
+          "name": "FB",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "EN",
+          "type": "input"
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "type": "power_in"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "5",
+          "name": "SW",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "VOUT",
+          "type": "power_out"
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "U7",
+      "value": "BQ29700DSET",
+      "libsym": "Battery_Management:BQ297xy",
+      "footprint": "Package_SON:WSON-6_1.5x1.5mm_P0.5mm",
+      "nets": {
+        "2": "PROT_COUT",
+        "3": "PROT_DOUT",
+        "4": "CELL_NEG",
+        "5": "PROT_BAT",
+        "6": "PROT_VM",
+        "1": null
+      },
+      "at": [
+        33,
+        33
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "BQ29700DSET",
+      "note": "4.275 V / 2.8 V cell protection; cell negative isolated from system GND",
+      "pins": [
+        {
+          "number": "1",
+          "name": "NC",
+          "type": "no_connect",
+          "at": [
+            "7.62",
+            "0",
+            "180"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "Cout",
+          "type": "output",
+          "at": [
+            "10.16",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "Dout",
+          "type": "output",
+          "at": [
+            "10.16",
+            "-2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "VSS",
+          "type": "power_in",
+          "at": [
+            "0",
+            "-7.62",
+            "90"
+          ]
+        },
+        {
+          "number": "5",
+          "name": "BAT",
+          "type": "input",
+          "at": [
+            "-10.16",
+            "2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "6",
+          "name": "V-",
+          "type": "input",
+          "at": [
+            "-10.16",
+            "-2.54",
+            "0"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "Q1",
+      "value": "AO3400A",
+      "libsym": "Transistor_FET:AO3400A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "nets": {
+        "1": "PROT_DOUT",
+        "2": "CELL_NEG",
+        "3": "FET_MID"
+      },
+      "at": [
+        34,
+        37.5
+      ],
+      "angle": 180,
+      "side": "back",
+      "mpn": "AO3400A",
+      "note": "Discharge FET; common drain with Q2",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "type": "input",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "type": "passive",
+          "at": [
+            "2.54",
+            "-5.08",
+            "90"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "type": "passive",
+          "at": [
+            "2.54",
+            "5.08",
+            "270"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "Q2",
+      "value": "AO3400A",
+      "libsym": "Transistor_FET:AO3400A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "nets": {
+        "1": "PROT_COUT",
+        "2": "GND",
+        "3": "FET_MID"
+      },
+      "at": [
+        30,
+        37.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "AO3400A",
+      "note": "Charge FET; common drain with Q1",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "type": "input",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "type": "passive",
+          "at": [
+            "2.54",
+            "-5.08",
+            "90"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "type": "passive",
+          "at": [
+            "2.54",
+            "5.08",
+            "270"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "U8",
+      "value": "USBLC6-2SC6",
+      "libsym": "Power_Protection:USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "nets": {
+        "1": "USB_M",
+        "2": "GND",
+        "3": "USB_P",
+        "4": "USB_P",
+        "5": "VBUS",
+        "6": "USB_M"
+      },
+      "at": [
+        29.3,
+        32.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "USBLC6-2SC6",
+      "note": "USB ESD diode array placed near connector",
+      "pins": [
+        {
+          "number": "1",
+          "name": "I/O1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-7.62",
+            "90"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "I/O2",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "-2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "I/O2",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "-2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "5",
+          "name": "VBUS",
+          "type": "passive",
+          "at": [
+            "0",
+            "5.08",
+            "270"
+          ]
+        },
+        {
+          "number": "6",
+          "name": "I/O1",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "J1",
+      "value": "USB-C USB2",
+      "libsym": "Connector:USB_C_Receptacle_USB2.0_16P",
+      "footprint": "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "nets": {
+        "A1": "GND",
+        "A4": "VBUS",
+        "A5": "CC1",
+        "A6": "USB_P",
+        "A7": "USB_M",
+        "A8": null,
+        "A9": "VBUS",
+        "A12": "GND",
+        "B1": "GND",
+        "B4": "VBUS",
+        "B5": "CC2",
+        "B6": "USB_P",
+        "B7": "USB_M",
+        "B8": null,
+        "B9": "VBUS",
+        "B12": "GND",
+        "SH": "GND"
+      },
+      "at": [
+        21.5,
+        36.2
+      ],
+      "angle": 180,
+      "side": "back",
+      "mpn": "USB-C USB2",
+      "note": "USB device; use a 5 V USB source capable of 500 mA",
+      "pins": [
+        {
+          "number": "A1",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-22.86",
+            "90"
+          ]
+        },
+        {
+          "number": "A4",
+          "name": "VBUS",
+          "type": "passive",
+          "at": [
+            "15.24",
+            "15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "A5",
+          "name": "CC1",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "10.16",
+            "180"
+          ]
+        },
+        {
+          "number": "A6",
+          "name": "D+",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "A7",
+          "name": "D-",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "A8",
+          "name": "SBU1",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-12.7",
+            "180"
+          ]
+        },
+        {
+          "number": "A9",
+          "name": "VBUS",
+          "type": "passive",
+          "at": [
+            "15.24",
+            "15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "A12",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-22.86",
+            "90"
+          ]
+        },
+        {
+          "number": "B1",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-22.86",
+            "90"
+          ]
+        },
+        {
+          "number": "B4",
+          "name": "VBUS",
+          "type": "passive",
+          "at": [
+            "15.24",
+            "15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "B5",
+          "name": "CC2",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "7.62",
+            "180"
+          ]
+        },
+        {
+          "number": "B6",
+          "name": "D+",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-5.08",
+            "180"
+          ]
+        },
+        {
+          "number": "B7",
+          "name": "D-",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "0",
+            "180"
+          ]
+        },
+        {
+          "number": "B8",
+          "name": "SBU2",
+          "type": "bidirectional",
+          "at": [
+            "15.24",
+            "-15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "B9",
+          "name": "VBUS",
+          "type": "passive",
+          "at": [
+            "15.24",
+            "15.24",
+            "180"
+          ]
+        },
+        {
+          "number": "B12",
+          "name": "GND",
+          "type": "passive",
+          "at": [
+            "0",
+            "-22.86",
+            "90"
+          ]
+        },
+        {
+          "number": "SH",
+          "name": "SHIELD",
+          "type": "passive",
+          "at": [
+            "-7.62",
+            "-22.86",
+            "90"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "J2",
+      "value": "GC9A01 TFT",
+      "libsym": null,
+      "footprint": "CompassCarrier:GC9A01_TFT_Socket",
+      "nets": {
+        "1": "GPS_5V",
+        "2": "GND",
+        "3": "TFT_SCK",
+        "4": "TFT_MOSI",
+        "5": "TFT_DC",
+        "6": "TFT_CS",
+        "7": "TFT_RST"
+      },
+      "at": [
+        51.74,
+        20
+      ],
+      "angle": 90,
+      "side": "front",
+      "mpn": "GC9A01 TFT",
+      "note": "Screen centered (27,20); 2.54 mm straight-header spacer; 5 V supply as on working prototype",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCC",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "3",
+          "name": "SCL",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "SDA",
+          "type": "input"
+        },
+        {
+          "number": "5",
+          "name": "DC",
+          "type": "input"
+        },
+        {
+          "number": "6",
+          "name": "CS",
+          "type": "input"
+        },
+        {
+          "number": "7",
+          "name": "RST",
+          "type": "input"
+        }
+      ],
+      "block": "display"
+    },
+    {
+      "ref": "J3",
+      "value": "BATTERY JST-PH2",
+      "libsym": "Connector_Generic:Conn_01x02",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+      "nets": {
+        "1": "VBAT",
+        "2": "CELL_NEG"
+      },
+      "at": [
+        42,
+        33
+      ],
+      "angle": 180,
+      "side": "back",
+      "mpn": "BATTERY JST-PH2",
+      "note": "Pin 1 positive; 300-1000 mAh 1S 4.2 V-charge Li-ion/LiPo; verify plug polarity",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "-2.54",
+            "0"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "J4",
+      "value": "GPS JST-SH4",
+      "libsym": "Connector_Generic:Conn_01x04",
+      "footprint": "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",
+      "nets": {
+        "1": "GPS_VCC",
+        "2": "GPS_RX",
+        "3": "GPS_TX",
+        "4": "GND"
+      },
+      "at": [
+        37,
+        3.4
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "GPS JST-SH4",
+      "note": "New SH cable: VCC,RX,TX,GND; UART is 3.3 V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "-2.54",
+            "0"
+          ]
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "-5.08",
+            "0"
+          ]
+        }
+      ],
+      "block": "display"
+    },
+    {
+      "ref": "J5",
+      "value": "BATTERY NTC",
+      "libsym": "Connector_Generic:Conn_01x02",
+      "footprint": "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal",
+      "nets": {
+        "1": "BAT_TS",
+        "2": "GND"
+      },
+      "at": [
+        3.4,
+        21
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "BATTERY NTC",
+      "note": "External 10k 103AT-2 thermistor attached to cell; no NTC = charge inhibited",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "-2.54",
+            "0"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "JP1",
+      "value": "GPS 3V3/5V",
+      "libsym": "Jumper:Jumper_3_Open",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "3V3",
+        "2": "GPS_VCC",
+        "3": "GPS_5V"
+      },
+      "at": [
+        48,
+        33
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "GPS 3V3/5V",
+      "note": "Bridge 2-3 by default for 5 V breakout; never bridge both sides",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "C",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "B",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "display"
+    },
+    {
+      "ref": "JP2",
+      "value": "FAST 250mA",
+      "libsym": "Jumper:Jumper_2_Open",
+      "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "CHG_ISET",
+        "2": "FAST_R"
+      },
+      "at": [
+        45.5,
+        3
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "FAST 250mA",
+      "note": "Open=100 mA for 300-500 mAh; bridge=250 mA for 500-1000 mAh cells rated for it",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "B",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "SW1",
+      "value": "CAL/BOOT",
+      "libsym": "Switch:SW_Push",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm",
+      "nets": {
+        "1": "BOOT",
+        "2": "GND"
+      },
+      "at": [
+        1.75,
+        4.75
+      ],
+      "angle": 0,
+      "side": "front",
+      "mpn": "CAL/BOOT",
+      "note": "Body center (5,7); GPIO0 held on reset enters ROM bootloader",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "SW2",
+      "value": "ACTION",
+      "libsym": "Switch:SW_Push",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm",
+      "nets": {
+        "1": "BUTTON_2",
+        "2": "GND"
+      },
+      "at": [
+        1.75,
+        30.75
+      ],
+      "angle": 0,
+      "side": "front",
+      "mpn": "ACTION",
+      "note": "Body center (5,33); GPIO2",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "SW3",
+      "value": "RESET",
+      "libsym": "Switch:SW_Push",
+      "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+      "nets": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "at": [
+        13.5,
+        4.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "RESET",
+      "note": "Rear reset button",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "SW4",
+      "value": "POWER",
+      "libsym": "Switch:SW_SPDT",
+      "footprint": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN",
+      "nets": {
+        "1": "GND",
+        "2": "POWER_EN",
+        "3": "SYS"
+      },
+      "at": [
+        23,
+        4
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "POWER",
+      "note": "Off grounds regulator enable; charger stays active",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "2.54",
+            "180"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "B",
+          "type": "passive",
+          "at": [
+            "-5.08",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "3",
+          "name": "C",
+          "type": "passive",
+          "at": [
+            "5.08",
+            "-2.54",
+            "180"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "R1",
+      "value": "4.7k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "I2C_SDA"
+      },
+      "at": [
+        12,
+        26
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "4.7k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "R2",
+      "value": "4.7k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "I2C_SCL"
+      },
+      "at": [
+        9,
+        26
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "4.7k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "C1",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        8,
+        23
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "C2",
+      "value": "1u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        14,
+        23
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "1u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "C3",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        8,
+        17
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "C4",
+      "value": "1u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        14,
+        17
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "1u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "C5",
+      "value": "220n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "MAG_C1",
+        "2": "GND"
+      },
+      "at": [
+        11,
+        20
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "220n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "sensors"
+    },
+    {
+      "ref": "R3",
+      "value": "10k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "MCU_EN"
+      },
+      "at": [
+        14,
+        9.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "10k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "C6",
+      "value": "1u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "at": [
+        17,
+        9.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "1u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "R4",
+      "value": "10k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "BOOT"
+      },
+      "at": [
+        11,
+        10
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "10k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "R5",
+      "value": "10k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "BUTTON_2"
+      },
+      "at": [
+        8,
+        13
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "10k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "C7",
+      "value": "10u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        14,
+        12
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "10u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "C8",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        12,
+        14
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "R6",
+      "value": "22",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "USB_M",
+        "2": "USB_M_MCU"
+      },
+      "at": [
+        23,
+        10
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "22",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "R7",
+      "value": "22",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "USB_P",
+        "2": "USB_P_MCU"
+      },
+      "at": [
+        21,
+        10
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "22",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "R8",
+      "value": "5.1k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "CC1",
+        "2": "GND"
+      },
+      "at": [
+        14,
+        36.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "5.1k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "R9",
+      "value": "5.1k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "CC2",
+        "2": "GND"
+      },
+      "at": [
+        29.9,
+        29
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "5.1k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "C9",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "at": [
+        15,
+        28.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "usb"
+    },
+    {
+      "ref": "R10",
+      "value": "330k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "VBAT",
+        "2": "BAT_ADC"
+      },
+      "at": [
+        31,
+        11
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "330k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "R11",
+      "value": "100k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "at": [
+        31,
+        8
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "100k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "C10",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "BAT_ADC",
+        "2": "GND"
+      },
+      "at": [
+        31,
+        5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "mcu"
+    },
+    {
+      "ref": "R12",
+      "value": "8.87k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      },
+      "at": [
+        36,
+        11
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "8.87k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "R13",
+      "value": "5.90k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "FAST_R",
+        "2": "GND"
+      },
+      "at": [
+        45.5,
+        5.1
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "5.90k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "R14",
+      "value": "3.16k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "CHG_ILIM",
+        "2": "GND"
+      },
+      "at": [
+        37,
+        13.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "3.16k",
+      "note": "ILIM unused in fixed USB500 mode; populated for defined pin bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "R15",
+      "value": "71.5k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "CHG_TMR",
+        "2": "GND"
+      },
+      "at": [
+        37,
+        8.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "71.5k",
+      "note": "9.53 h typical timer; 7.15-11.92 h factor limits; 1000 mAh use 250 mA mode",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "C11",
+      "value": "1u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "at": [
+        43,
+        6
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "1u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "C12",
+      "value": "4.7u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "at": [
+        44,
+        10
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "4.7u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "C13",
+      "value": "4.7u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "at": [
+        40,
+        14
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "4.7u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "R16",
+      "value": "2.2k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "VBUS",
+        "2": "LED_CHG_A"
+      },
+      "at": [
+        46.5,
+        7.7
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "2.2k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "D1",
+      "value": "CHARGE amber",
+      "libsym": "Device:LED",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "nets": {
+        "1": "CHG_N",
+        "2": "LED_CHG_A"
+      },
+      "at": [
+        49,
+        7.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "CHARGE amber",
+      "note": "Charge active / fault indicator",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "type": "passive",
+          "at": [
+            "-3.81",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "type": "passive",
+          "at": [
+            "3.81",
+            "0",
+            "180"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "R17",
+      "value": "10k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "PGOOD_N"
+      },
+      "at": [
+        34,
+        12.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "10k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "R18",
+      "value": "100k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "POWER_EN",
+        "2": "GND"
+      },
+      "at": [
+        34,
+        15
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "100k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "charger"
+    },
+    {
+      "ref": "L1",
+      "value": "1.5uH >=3A",
+      "libsym": "Device:L",
+      "footprint": "Inductor_SMD:L_Vishay_IFSC-1515AH_4x4x1.8mm",
+      "nets": {
+        "1": "BB_L1",
+        "2": "BB_L2"
+      },
+      "at": [
+        39.5,
+        27.2
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "IFSC1515AHER1R5M01",
+      "note": "Vishay shielded 1.5 uH; 3.60 A nominal saturation current; 4 x 4 mm",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "C14",
+      "value": "10u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "at": [
+        35.5,
+        21
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "10u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "C15",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "at": [
+        35.5,
+        24.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "C16",
+      "value": "22u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        45.3,
+        21.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "22u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "C17",
+      "value": "22u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "at": [
+        45.3,
+        25.1
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "22u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "C18",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "BB_AUX",
+        "2": "GND"
+      },
+      "at": [
+        42.8,
+        19.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "R19",
+      "value": "560k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "3V3",
+        "2": "BB_FB"
+      },
+      "at": [
+        43.2,
+        22.7
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "560k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "R20",
+      "value": "100k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "BB_FB",
+        "2": "GND"
+      },
+      "at": [
+        43.2,
+        24.8
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "3v3"
+    },
+    {
+      "ref": "L2",
+      "value": "1uH >=2A",
+      "libsym": "Device:L",
+      "footprint": "Inductor_SMD:L_Vishay_IHLP-1212",
+      "nets": {
+        "1": "SYS",
+        "2": "GPS_SW"
+      },
+      "at": [
+        48.5,
+        18.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "IHLP1212BZEV1R0M01",
+      "note": "Vishay shielded 1 uH IHLP-1212BZ-01; 6.92 A typical saturation; 4.99 A typical thermal rating",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "C19",
+      "value": "10u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "SYS",
+        "2": "GND"
+      },
+      "at": [
+        46,
+        13.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "10u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "C20",
+      "value": "22u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "GPS_5V",
+        "2": "GND"
+      },
+      "at": [
+        48.2,
+        24
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "22u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "C21",
+      "value": "22u",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "nets": {
+        "1": "GPS_5V",
+        "2": "GND"
+      },
+      "at": [
+        48.2,
+        26
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "22u",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "R21",
+      "value": "732k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "GPS_5V",
+        "2": "GPS_FB"
+      },
+      "at": [
+        45.2,
+        28
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "732k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "R22",
+      "value": "100k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "GPS_FB",
+        "2": "GND"
+      },
+      "at": [
+        44.7,
+        30
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "100k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "gpspower"
+    },
+    {
+      "ref": "R23",
+      "value": "330",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "VBAT",
+        "2": "PROT_BAT"
+      },
+      "at": [
+        33,
+        30
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "330",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "R24",
+      "value": "2.2k",
+      "libsym": "Device:R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "GND",
+        "2": "PROT_VM"
+      },
+      "at": [
+        36,
+        33
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "2.2k",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "C22",
+      "value": "100n",
+      "libsym": "Device:C",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "PROT_BAT",
+        "2": "CELL_NEG"
+      },
+      "at": [
+        35.5,
+        29.5
+      ],
+      "angle": 90,
+      "side": "back",
+      "mpn": "100n",
+      "note": "X7R; 10 V minimum; account for DC bias",
+      "pins": [
+        {
+          "number": "1",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "3.81",
+            "270"
+          ]
+        },
+        {
+          "number": "2",
+          "name": "",
+          "type": "passive",
+          "at": [
+            "0",
+            "-3.81",
+            "90"
+          ]
+        }
+      ],
+      "block": "protection"
+    },
+    {
+      "ref": "TP1",
+      "value": "GND",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "GND"
+      },
+      "at": [
+        4.5,
+        12
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "GND",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP2",
+      "value": "3V3",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "3V3"
+      },
+      "at": [
+        6,
+        15
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "3V3",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP3",
+      "value": "VBAT",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "VBAT"
+      },
+      "at": [
+        5,
+        26
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "VBAT",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP4",
+      "value": "SYS",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "SYS"
+      },
+      "at": [
+        34,
+        18
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "SYS",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP5",
+      "value": "GPS_RX",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "GPS_RX"
+      },
+      "at": [
+        33,
+        21
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "GPS_RX",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP6",
+      "value": "GPS_TX",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "GPS_TX"
+      },
+      "at": [
+        34,
+        27
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "GPS_TX",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP7",
+      "value": "MCU_EN",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "MCU_EN"
+      },
+      "at": [
+        33,
+        24
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "MCU_EN",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    },
+    {
+      "ref": "TP8",
+      "value": "BOOT",
+      "libsym": "Connector:TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "nets": {
+        "1": "BOOT"
+      },
+      "at": [
+        6,
+        28.5
+      ],
+      "angle": 0,
+      "side": "back",
+      "mpn": "BOOT",
+      "note": "",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "at": [
+            "0",
+            "0",
+            "90"
+          ]
+        }
+      ],
+      "block": "test"
+    }
+  ],
+  "battery": {
+    "chemistry": "1S Li-ion/LiPo, 4.2 V charge",
+    "capacity_mAh": [
+      300,
+      1000
+    ],
+    "connector": "JST-PH 2.00 mm, pin1 positive",
+    "charge_mA_default": 100,
+    "charge_mA_fast": 251,
+    "external_ntc": "10k 103AT-2 attached to cell, J5"
+  },
+  "status": "Prototype design; bench validation required"
+}

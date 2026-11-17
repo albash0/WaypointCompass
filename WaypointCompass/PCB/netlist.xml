@@ -1,0 +1,1351 @@
+(export
+	(version "E")
+	(design
+		(source "${ARDUINO_WORKSPACE}/WaypointCompass/PCB/WaypointCompassCarrier.kicad_sch")
+		(date "2026-10-01T19:55:33")
+		(tool "Eeschema 10.0.1")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "Waypoint Compass Header Carrier")
+				(company)
+				(rev "B")
+				(date "2026-10-01")
+				(source "WaypointCompassCarrier.kicad_sch")
+				(comment
+					(number "1")
+					(value "Direct soldered headers and tactile buttons; USB-powered")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "J1")
+			(value "ESP32-S3 SuperMini")
+			(footprint "CompassCarrier:ESP32_S3_SuperMini_2x09_Sockets")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:ESP32_S3_SuperMini_2x09_Sockets")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_J1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4a88fd12-bba9-5d5a-be9e-f6c258800ff6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "GC9A01 TFT")
+			(footprint "CompassCarrier:GC9A01_TFT_Socket")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:GC9A01_TFT_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_J2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d580f773-fd6a-5b71-8084-326a4cfee617")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "GPS CABLE")
+			(footprint "CompassCarrier:GPS_CABLE_Socket")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:GPS_CABLE_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_J3")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "81970622-f5d5-5bab-97ca-23e20713c98a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "GY-521")
+			(footprint "CompassCarrier:GY_521_Socket")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:GY_521_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_J4")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "17102f1d-1784-564f-ad3a-f3f4c7e981e1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "GY-271")
+			(footprint "CompassCarrier:GY_271_Socket")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:GY_271_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_J5")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2e8088b1-fe7c-549a-9683-994fbd382209")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP1")
+			(value "GPS VOLTAGE")
+			(footprint "CompassCarrier:GPS_VOLTAGE_Socket")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:GPS_VOLTAGE_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_JP1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "20aa5c8a-27fa-55ae-b89f-407186b0c0e0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "6x6 tactile")
+			(footprint "CompassCarrier:SW_PUSH_6mm")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:SW_PUSH_6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_SW1")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9491b82b-5831-53a3-b307-771855c009ce")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "6x6 tactile")
+			(footprint "CompassCarrier:SW_PUSH_6mm")
+			(fields
+				(field
+					(name "Footprint") "CompassCarrier:SW_PUSH_6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "CompassCarrier")
+				(part "Socket_SW2")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "WaypointCompassCarrier.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fb64be7c-6efb-5686-a2d7-75a51f60de78")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_J1")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "ESP32-S3 SuperMini")
+				(field
+					(name "Footprint") "CompassCarrier:ESP32_S3_SuperMini_2x09_Sockets")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "TX_/_GPIO43")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "RX_/_GPIO44")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "GPIO1")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "GPIO2")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "GPIO3")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "GPIO4")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "GPIO5")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "GPIO6")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "GPIO7")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "5V_/_USB")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "GPIO13")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "GPIO12")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "GPIO11")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "GPIO10")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "GPIO9")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "GPIO8")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_J2")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "GC9A01 TFT")
+				(field
+					(name "Footprint") "CompassCarrier:GC9A01_TFT_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VCC")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SCL_/_CLK")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "SDA_/_DIN")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "DC")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "CS")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "RST")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_J3")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "GPS CABLE")
+				(field
+					(name "Footprint") "CompassCarrier:GPS_CABLE_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VCC")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "RX")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "TX")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_J4")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "GY-521")
+				(field
+					(name "Footprint") "CompassCarrier:GY_521_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VCC")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "XDA")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "XCL")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "AD0")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "INT")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_J5")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "GY-271")
+				(field
+					(name "Footprint") "CompassCarrier:GY_271_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "DRDY_/_DD0Y")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "VCC")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_JP1")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "GPS VOLTAGE")
+				(field
+					(name "Footprint") "CompassCarrier:GPS_VOLTAGE_Socket")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "3V3")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "GPS_VCC")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "5V_USB")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_SW1")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "6x6 tactile")
+				(field
+					(name "Footprint") "CompassCarrier:SW_PUSH_6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "CompassCarrier")
+			(part "Socket_SW2")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "6x6 tactile")
+				(field
+					(name "Footprint") "CompassCarrier:SW_PUSH_6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "CompassCarrier")
+			(uri "${KIPRJMOD}/CompassCarrier.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/3V3")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "12")
+				(pinfunction "3V3_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "VCC_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "7")
+				(pinfunction "RST_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "VCC_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "5")
+				(pinfunction "VCC_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP1")
+				(pin "1")
+				(pinfunction "3V3_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "/5V_USB")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "10")
+				(pinfunction "5V_/_USB_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP1")
+				(pin "3")
+				(pinfunction "5V_USB_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "/AUX_SCL")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "6")
+				(pinfunction "XCL_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "3")
+				(pinfunction "SCL_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "/AUX_SDA")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "5")
+				(pinfunction "XDA_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "SDA_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/BUTTON_1")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "GPIO1_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/BUTTON_2")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "GPIO2_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/GND")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "11")
+				(pinfunction "GND_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "6")
+				(pinfunction "CS_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "7")
+				(pinfunction "AD0_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "/GPS_RX")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "TX_/_GPIO43_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "RX_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/GPS_TX")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "RX_/_GPIO44_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "TX_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/GPS_VCC")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "VCC_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP1")
+				(pin "2")
+				(pinfunction "GPS_VCC_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/IMU_SCL")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "17")
+				(pinfunction "GPIO9_17")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "3")
+				(pinfunction "SCL_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/IMU_SDA")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "18")
+				(pinfunction "GPIO8_18")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "4")
+				(pinfunction "SDA_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/TFT_DC")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "13")
+				(pinfunction "GPIO13_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "DC_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/TFT_MOSI")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "15")
+				(pinfunction "GPIO11_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "SDA_/_DIN_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/TFT_SCK")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "16")
+				(pinfunction "GPIO10_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "SCL_/_CLK_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "unconnected-(J1-GPIO3-Pad5)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "5")
+				(pinfunction "GPIO3_5")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "17")
+			(name "unconnected-(J1-GPIO4-Pad6)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "6")
+				(pinfunction "GPIO4_6")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "18")
+			(name "unconnected-(J1-GPIO5-Pad7)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "7")
+				(pinfunction "GPIO5_7")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "19")
+			(name "unconnected-(J1-GPIO6-Pad8)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "8")
+				(pinfunction "GPIO6_8")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "20")
+			(name "unconnected-(J1-GPIO7-Pad9)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "9")
+				(pinfunction "GPIO7_9")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "21")
+			(name "unconnected-(J1-GPIO12-Pad14)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "14")
+				(pinfunction "GPIO12_14")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "22")
+			(name "unconnected-(J4-INT-Pad8)")
+			(class "Default")
+			(node
+				(ref "J4")
+				(pin "8")
+				(pinfunction "INT_8")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "23")
+			(name "unconnected-(J5-DRDY_{slash}_DD0Y-Pad1)")
+			(class "Default")
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "DRDY_/_DD0Y_1")
+				(pintype "passive+no_connect")
+			)
+		)
+	)
+)

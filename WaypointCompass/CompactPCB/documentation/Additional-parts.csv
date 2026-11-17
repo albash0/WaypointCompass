@@ -1,0 +1,8 @@
+Item,Quantity,Specification
+Battery,1,"300-1000 mAh 1S Li-ion/LiPo; 4.2 V charge; JST-PH2 pin1 positive"
+Battery thermistor,1,"Semitec 103AT-2 10k NTC plus JST-SH2 cable; thermally attached to battery"
+GPS cable,1,"JST-SH4 to GPS module; VCC RX TX GND; crossed TX/RX to ESP32"
+Display header,1,"7-position straight male header 2.54 mm pitch; spacer sets 2.54 mm PCB gap"
+Display supports,2,"Nonmagnetic M2 hardware; nominal 2.54 mm gap; check actual module"
+Battery plug/cable,1,"JST-PH2 matching polarity; never assume cable colors"
+Case button plungers,2,"Optional for standard-height 6x6 mm buttons beside raised LCD"

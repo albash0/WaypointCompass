@@ -1,0 +1,44 @@
+References,Quantity,MPN,Value,Footprint,Assembly,Notes
+U1,1,ESP32-S3-MINI-1U-N4R2,ESP32-S3-MINI-1U-N4R2,RF_Module:ESP32-S2-MINI-1U,Rear SMT,Optional external 2.4 GHz antenna; no RF used by compass firmware
+U2,1,LIS2DH12TR,LIS2DH12TR,Package_LGA:LGA-12_2x2mm_P0.5mm,Rear SMT,I2C 0x18; +X must be mapped to device front
+U3,1,LIS2MDLTR,LIS2MDLTR,Package_LGA:LGA-12_2x2mm_P0.5mm,Rear SMT,I2C 0x1E; NC pins 2/11/12 left open
+U4,1,BQ24074RGTR,BQ24074RGTR,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,Rear SMT,4.2 V single-cell; fixed 500 mA USB input mode; 100 mA default charge
+U5,1,TPS63060DSCR,TPS63060DSCR,Package_SON:Texas_S-PWSON-N10,Rear SMT,3.3 V buck-boost; forced PWM for predictable sensor noise
+U6,1,TPS61023DRLR,TPS61023DRLR,Package_TO_SOT_SMD:SOT-563,Rear SMT,5 V GPS breakout supply while running from battery
+U7,1,BQ29700DSET,BQ29700DSET,Package_SON:WSON-6_1.5x1.5mm_P0.5mm,Rear SMT,4.275 V / 2.8 V cell protection; cell negative isolated from system GND
+Q1,1,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,Rear SMT,Discharge FET; common drain with Q2
+Q2,1,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,Rear SMT,Charge FET; common drain with Q1
+U8,1,USBLC6-2SC6,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Rear SMT,USB ESD diode array placed near connector
+J1,1,TYPE-C-31-M-12,USB-C USB2,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,Rear SMT + shell through-hole,USB device; use a 5 V USB source capable of 500 mA
+J2,1,Existing 7-pin GC9A01 TFT + straight 2.54 mm header,GC9A01 TFT,CompassCarrier:GC9A01_TFT_Socket,Front through-hole / manual,"Screen centered (27,20); 2.54 mm straight-header spacer; 5 V supply as on working prototype"
+J3,1,S2B-PH-K-S(LF)(SN),BATTERY JST-PH2,Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,Rear through-hole,Pin 1 positive; 300-1000 mAh 1S 4.2 V-charge Li-ion/LiPo; verify plug polarity
+J4,1,SM04B-SRSS-TB(LF)(SN),GPS JST-SH4,Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,Rear SMT,"New SH cable: VCC,RX,TX,GND; UART is 3.3 V"
+J5,1,SM02B-SRSS-TB(LF)(SN),BATTERY NTC,Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal,Rear SMT,External 10k 103AT-2 thermistor attached to cell; no NTC = charge inhibited
+SW1,1,B3F-1000,CAL/BOOT,Button_Switch_THT:SW_PUSH_6mm,Front through-hole / manual,"Body center (5,7); GPIO0 held on reset enters ROM bootloader"
+SW2,1,B3F-1000,ACTION,Button_Switch_THT:SW_PUSH_6mm,Front through-hole / manual,"Body center (5,33); GPIO2"
+SW3,1,TL3342F160QG,RESET,Button_Switch_SMD:SW_SPST_TL3342,Rear SMT,Rear reset button
+SW4,1,JS102011SAQN,POWER,Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN,Rear SMT,Off grounds regulator enable; charger stays active
+"R1, R2",2,RC0603FR-074K7L,4.7k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+"C1, C3, C8, C9, C10, C15, C18, C22",8,GRM188R71C104KA01D,100n,Capacitor_SMD:C_0603_1608Metric,Rear SMT,"100 nF, 16 V, X7R, 0603"
+"C2, C4, C6, C11",4,GRM188R71A105KA61D,1u,Capacitor_SMD:C_0603_1608Metric,Rear SMT,"1 uF, 10 V, X7R, 0603"
+C5,1,GRM188R71C224KA01D,220n,Capacitor_SMD:C_0603_1608Metric,Rear SMT,"220 nF, 16 V, X7R, 0603"
+"R3, R4, R5, R17",4,RC0603FR-0710KL,10k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+"C7, C14, C19",3,GRM21BR61A106KE19L,10u,Capacitor_SMD:C_0805_2012Metric,Rear SMT,"10 uF, 10 V, X5R, 0805"
+"R6, R7",2,RC0603FR-0722RL,22,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+"R8, R9",2,RC0603FR-075K1L,5.1k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+R10,1,RC0603FR-07330KL,330k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+"R11, R18, R22",3,RC0603FR-07100KL,100k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+R12,1,RC0603FR-078K87L,8.87k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+R13,1,RC0603FR-075K9L,5.90k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+R14,1,RC0603FR-073K16L,3.16k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; ILIM unused in fixed USB500 mode; populated for defined pin bias"
+R15,1,RC0603FR-0771K5L,71.5k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; 9.53 h typical timer; 7.15-11.92 h factor limits; 1000 mAh use 250 mA mode"
+"C12, C13",2,GRM188R61A475KE15D,4.7u,Capacitor_SMD:C_0603_1608Metric,Rear SMT,"4.7 uF, 10 V, X5R, 0603"
+"R16, R24",2,RC0603FR-072K2L,2.2k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+D1,1,LTST-C190KFKT,CHARGE amber,LED_SMD:LED_0603_1608Metric,Rear SMT,Charge active / fault indicator
+L1,1,IFSC1515AHER1R5M01,1.5uH >=3A,Inductor_SMD:L_Vishay_IFSC-1515AH_4x4x1.8mm,Rear SMT,Vishay shielded 1.5 uH; 3.60 A nominal saturation current; 4 x 4 mm
+"C16, C17, C20, C21",4,C2012X5R1A226M125AB,22u,Capacitor_SMD:C_0805_2012Metric,Rear SMT,"22 uF, 10 V, X5R, 0805"
+R19,1,RC0402FR-07560KL,560k,Resistor_SMD:R_0402_1005Metric,Rear SMT,"1%, 0402; "
+R20,1,RC0402FR-07100KL,100k,Resistor_SMD:R_0402_1005Metric,Rear SMT,"1%, 0402; "
+L2,1,IHLP1212BZEV1R0M01,1uH >=2A,Inductor_SMD:L_Vishay_IHLP-1212,Rear SMT,Vishay shielded 1 uH IHLP-1212BZ-01; 6.92 A typical saturation; 4.99 A typical thermal rating
+R21,1,RC0603FR-07732KL,732k,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "
+R23,1,RC0603FR-07330RL,330,Resistor_SMD:R_0603_1608Metric,Rear SMT,"1%, 0603; "

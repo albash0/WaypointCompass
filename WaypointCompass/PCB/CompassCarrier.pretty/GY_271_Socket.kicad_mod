@@ -1,0 +1,237 @@
+(footprint "GY_271_Socket"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "22f55abf-a854-404f-ae36-94298bf9b101")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "GY-271"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d77b7aa-e40a-4c44-b22a-c4ef70389e52")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc326c9b-3164-4dbb-8ee9-7273d70ce795")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "def9079c-4259-4b84-8d48-18305b7d57a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.38 -1.3)
+		(end 6.38 -1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bfb6e7a1-7e90-4078-91d8-26e7de39fe30")
+	)
+	(fp_line
+		(start -6.38 1.3)
+		(end -6.38 -1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f900a5c2-b40d-4496-9265-a7308e8adad5")
+	)
+	(fp_line
+		(start 6.38 -1.3)
+		(end 6.38 1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cb16b151-e70e-4a42-bf7c-b4abebdb3cee")
+	)
+	(fp_line
+		(start 6.38 1.3)
+		(end -6.38 1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0b7677a4-ad28-4869-953c-9ec1893c636e")
+	)
+	(fp_line
+		(start -6.68 -1.7)
+		(end 6.68 -1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "43ff3e4a-7655-4acb-a9ab-395b057be56e")
+	)
+	(fp_line
+		(start -6.68 1.7)
+		(end -6.68 -1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "35a6ba89-d07e-46f7-9dc9-4e94a9c8550b")
+	)
+	(fp_line
+		(start 6.68 -1.7)
+		(end 6.68 1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "22ead49a-12cd-4dc7-9988-d463b81833a4")
+	)
+	(fp_line
+		(start 6.68 1.7)
+		(end -6.68 1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "99ca47d7-a078-4f14-9975-174cfe29ab00")
+	)
+	(fp_line
+		(start -7.5 0)
+		(end 7.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a8fbea8c-dbb1-40d8-a9f3-f96bbeeec186")
+	)
+	(fp_line
+		(start -7.5 18)
+		(end -7.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "4c2ee7c0-d00a-40fe-a09f-213b34be2456")
+	)
+	(fp_line
+		(start 7.5 0)
+		(end 7.5 18)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "311a9dcc-44c4-4828-b693-77e681c902b4")
+	)
+	(fp_line
+		(start 7.5 18)
+		(end -7.5 18)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "285efa71-a7b5-4e68-9c08-1642128b498f")
+	)
+	(pad "1" thru_hole rect
+		(at -5.08 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "15b2e137-6025-4b4c-a61c-7595f85b7519")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d38b6e83-c2a5-4bda-b660-bde4236aa049")
+	)
+	(pad "3" thru_hole circle
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ff2befec-1e16-471f-9817-60fc30c97bfd")
+	)
+	(pad "4" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "03c8411f-7cc6-4137-858b-0efd850181c0")
+	)
+	(pad "5" thru_hole circle
+		(at 5.08 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a92e3dd3-6606-466a-9b36-12107af62e3c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/modules/GY_271.step"
+		(offset
+			(xyz 0 -5.25 3.84)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/3dmodels/assembly/J5_straight_headers.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

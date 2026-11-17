@@ -1,0 +1,15 @@
+Waypoint Compass Compact, C1 PROTOTYPE
+54.00 x 40.00 mm; 4 copper layers; 1.00 mm finished thickness; FR4; ENIG.
+Layer order: F.Cu / In1.Cu (GND) / In2.Cu (3V3) / B.Cu.
+Nominal copper 35 um/layer; dielectric 0.11 / 0.64 / 0.11 mm.
+Minimum design clearance 0.10 mm, track 0.12 mm, via 0.40 mm / 0.20 mm finished drill.
+Use supplied Edge_Cuts contour, PTH and NPTH drills. All vias are through vias.
+Tent small vias. Obtain assembler/fabricator review of vias within exposed thermal pads; fill/cap or otherwise control solder wicking if tenting does not provide an adequate process.
+USB pair on F.Cu: nominal 0.15 mm width, 0.15 mm edge gap above In1 GND.
+Ask fabricator to confirm 90-ohm differential impedance against its actual stackup. The nominal stackup is not an impedance certification. Agree adjustments with PCB designer before changing copper.
+One SMT assembly side: rear (bottom). J1 also has shell through-hole slots. J3 is a rear through-hole connector. SW1, SW2 and J2 are front through-hole/manual parts.
+positions.csv uses the KiCad drill origin at the bottom-left board corner: X right, Y up. Bottom-side rotations follow KiCad's native convention. Check pin 1 and polarity against native footprints; do not blindly apply a second bottom-side mirror.
+BOM.csv and BOM-grouped.csv identify populated parts. Test pads, mounting holes and solder jumpers are PCB features, not purchased parts. C5 is 220 nF (magnetometer internal supply); retain its specified value.
+Factory bridge JP1 pads 2-3 for 5 V GPS module power. Do not bridge pad 1. Keep JP2 open for default 100 mA charging.
+Display module supply is 5 V; verify this matches the selected GC9A01 breakout. SPI and GPS UART signals are 3.3 V.
+C1 is bench-unverified: order prototypes first, then validate charging, battery protection, regulator stability and compass performance before a production batch.

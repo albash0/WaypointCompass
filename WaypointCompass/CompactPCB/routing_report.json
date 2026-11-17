@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "revision": "C1",
+  "final_DRC": "checks/DRC-final.json",
+  "violations": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "note": "Final native-board DRC replaces intermediate router diagnostics."
+}

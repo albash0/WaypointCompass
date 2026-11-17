@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "Compact") (type "KiCad") (uri "${KIPRJMOD}/Compact.kicad_sym") (options "") (descr "Compact local symbols")))

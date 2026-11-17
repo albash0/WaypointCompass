@@ -1,0 +1,147 @@
+WAYPOINT COMPASS CARRIER — REV B
+KiCad 10 project: WaypointCompassCarrier.kicad_pro
+
+This is a 60 x 40 mm, two-layer carrier. All assembled parts on the carrier
+are through-hole pin headers, two tactile buttons, and one removable jumper shunt.
+Power comes from the ESP32-S3 SuperMini's USB connector.
+
+DIRECT HEADERS AND CONNECTORS
+
+Reference  Side   Connector                    Purpose
+J1         Back   Two 1x9 male headers         ESP32-S3 SuperMini
+J2         Front  One 1x7 male header          Round GC9A01 TFT
+J3         Back   One 1x4 male header          GPS cable
+J4         Back   One 1x8 male header          GY-521 / MPU-6050
+J5         Back   One 1x5 male header          GY-271 / QMC5883P
+JP1        Back   One 1x3 male header + shunt  GPS supply selection
+SW1        Front  Standard 6x6 tactile switch GPIO1 input, pressed = GND
+SW2        Front  Standard 6x6 tactile switch GPIO2 input, pressed = GND
+
+All connectors have 2.54 mm pitch and 1.00 mm plated holes. J1 uses
+15.24 mm between the two header rows, with 20.32 mm between end pins.
+Use straight male headers soldered into BOTH the module and carrier PCBs.
+The plastic spacer sits between the boards and sets a 2.54 mm gap between
+the facing PCB surfaces. There are no female sockets on J1/J2/J4/J5.
+Choose pins long enough for both PCB thicknesses, the spacer, and solder
+protrusion on both outer faces (the model uses an 8.4 mm total pin length).
+
+PIN MAPS
+
+The following orders describe each module's own printed header order,
+for the module prototype. Pin 1 is the square carrier pad.
+
+J2 TFT:     1 VCC, 2 GND, 3 SCL/CLK, 4 SDA/DIN, 5 DC, 6 CS, 7 RST.
+J3 GPS:     1 VCC, 2 RX, 3 TX, 4 GND.
+J4 GY-521:  1 VCC, 2 GND, 3 SCL, 4 SDA, 5 XDA, 6 XCL, 7 AD0, 8 INT.
+J5 GY-271:  1 DRDY (label supplied as DD0Y), 2 SDA, 3 SCL, 4 GND, 5 VCC.
+
+J1 SuperMini, viewed from its component side with USB at the top:
+  Left row, top to bottom:  TX, RX, 1, 2, 3, 4, 5, 6, 7.
+  Right row, top to bottom: 5V, GND, 3V3, 13, 12, 11, 10, 9, 8.
+This follows the existing SuperMini footprint in the original module prototype.
+
+WORKING CIRCUIT CONNECTIONS
+
+TFT SCL/CLK -> GPIO10; SDA/DIN -> GPIO11; DC -> GPIO13.
+TFT RST -> 3V3; CS -> GND; VCC -> 3V3. GPIO6 and GPIO12 are unused.
+GY-521 SDA -> GPIO8; SCL -> GPIO9; VCC -> 3V3; AD0 -> GND (address 0x68).
+GY-271 SDA -> GY-521 XDA; SCL -> GY-521 XCL; VCC -> 3V3.
+The existing firmware enables the MPU-6050's auxiliary I2C bypass.
+GPS TX -> ESP32 RX/GPIO44; GPS RX -> ESP32 TX/GPIO43.
+GY-521 INT and GY-271 DRDY are unconnected; firmware polls the sensors.
+SW1 connects GPIO1 to GND when pressed; SW2 connects GPIO2 to GND.
+These inputs need INPUT_PULLUP and software debounce in any future button
+handler. Button actions are not yet assigned in the current firmware.
+
+JP1 has 3V3 on pin 1, GPS VCC on pin 2, and USB 5V on pin 3.
+Fit ONE shunt across 1–2 for a 3.3 V supply, or across 2–3 for a 5 V supply,
+according to your GPS breakout's VCC rating. Without the shunt, GPS is off.
+The UART signals remain at 3.3 V regardless of the selected GPS supply.
+
+MECHANICAL FIT AND ASSEMBLY
+
+Inspect the 60 x 40 mm native PCB at 1:1 scale and verify the actual module headers before ordering.
+
+The TFT outline follows the supplied 38 x 45.5 mm drawing. Its round screen
+is centered at (30, 20) mm on the 60 x 40 mm carrier. It is rotated
+90 degrees so the 45.5 mm dimension runs along the carrier's 60 mm side.
+Two 2.00 mm unplated holes match the TFT drawing's support holes, with
+19.26 mm between centers. Use suitable M1.6 nonmagnetic hardware and
+2.54 mm standoffs between the facing PCB surfaces without bending the TFT.
+Do not use the reference STEP mounting holes to choose carrier drilling.
+Four 2.20 mm corner holes are available for M2 case mounting.
+The drawing's printed order RST CS DC SDA SCL GND VCC runs from pin 7 to
+pin 1; the carrier's square VCC pad matches the TFT drawing's pin-1 marker.
+
+The two 6 x 6 mm buttons sit on the front, outside the display outline.
+Viewed from the display side, with the board's top-left corner at (0, 0),
+SW1's body center is (5, 11.5) mm and SW2's is (5, 27) mm. There is 3 mm
+between the buttons' right body edges and the TFT's leftmost PCB edge.
+Their footprint is KiCad's standard SW_PUSH_6mm: four leads arranged
+6.50 x 4.50 mm, 1.10 mm plated drills and 2.00 mm copper pads. The two
+pad-1 leads are internally common; the two pad-2 leads are internally common.
+Verify this lead spacing on your switches before purchasing or ordering.
+The generic switch model has a short actuator (about 4.3 mm overall height).
+Since the TFT sits above its header spacer, provide case plungers if your enclosure
+requires the buttons to be reached from the same height as the screen face.
+The SuperMini moved 4 mm right and the GY-521 moved 0.5 mm right to clear
+the button leads; the display center and carrier dimensions are unchanged.
+
+The GY-521 body envelope is nominally 20 x 16 mm and the GY-271 envelope
+15 x 18 mm. These module body dimensions have not been measured on your
+parts. Their header pin counts/order are supplied by you; 2.54 mm sensor
+header pitch is assumed. Check the fit print, especially these two bodies.
+Supplier module reference solids and derived assembly STEPs are omitted from the public export. Check actual module dimensions and fit.
+
+The reference ESP32 has 2.5019 mm pitch / 15.0368 mm row spacing; the carrier
+retains 2.54 / 15.24 mm. The GY-271 reference has 2.60 mm pitch; the carrier
+retains 2.54 mm. TFT reference support holes are 18.86 mm apart and its pin
+row is 24.996 mm from the round PCB center; the supplied drawing and carrier
+use 19.26 mm and 24.74 mm. The drawing-defined display remains centered.
+These differences are also listed in module_models.json. The STEP assembly
+is useful for visualization and case planning, but does not certify fit.
+The reference GY-521 body extends slightly beyond its nominal Fab outline
+and approaches the ESP32 and JP1 closely; check your actual boards, jumper,
+and support hardware at the chosen 2.54 mm gap using the fit prints.
+
+Solder the headers into the modules with their plastic spacers on the side
+that will face the carrier. With all boards unpowered, hold the modules and
+carrier parallel in a fixture and solder the free pin ends into the carrier.
+Install the rear modules, GPS/selector headers and front switches before the
+front TFT, since the TFT covers some carrier solder joints. Trim protruding
+ends so pins and solder cannot touch the opposing module within the gap.
+Support the TFT mechanically; its header alone should not carry button/case
+loads. Match the square pad and physical pin labels before soldering, since
+these modules cannot be unplugged after direct mounting. The USB connector
+and BOOT button remain accessible from the back.
+
+The FRONT < mark points along the carrier's long axis toward its left edge
+when looking at the TFT/front face. This is also the display's native up
+direction with the existing tft.setRotation(0). Verify the GY-521 and GY-271
+printed sensor axes against your working assembly; a changed mounting
+orientation needs the corresponding firmware sensor-frame adjustment.
+After mounting everything, press BOOT and perform a new all-axis 10-second
+calibration. The assembled board's magnetic offsets can differ from the
+breadboard's saved calibration. Keep steel hardware away from the GY-271.
+
+FILES AND FABRICATION
+
+WaypointCompassCarrier.kicad_pro / .kicad_sch / .kicad_pcb: editable project.
+CompassCarrier.pretty / .kicad_sym / library tables / 3dmodels: local libraries.
+Header-BOM.csv: connector shopping list.
+documentation/: schematic, 1:1 fit prints, KiCad 3D renders, and assembled STEP.
+Some legacy footprint filenames contain Socket; these now have direct-header
+3D models and unchanged through-hole landing patterns.
+checks/: KiCad ERC, DRC/parity, drill report, and verification summary.
+WaypointCompassCarrier-Gerbers.zip: copper, masks, silk, outline, and drills.
+
+Order a standard 2-layer FR-4 board, 60 x 40 mm, 1.6 mm thick, 1 oz copper.
+The signal traces are 0.25 mm; power traces are 0.40 mm. Minimum clearance
+is 0.20 mm. Vias are 0.70 mm with 0.30 mm plated drills. Through-hole header
+pads are 1.80 mm diameter with 1.00 mm plated drills. Switch pads have
+2.00 mm diameter and 1.10 mm plated drills. No stencil is required.
+
+KiCad electrical checks and physical checks passed with zero reported
+violations, zero missing connections, and zero schematic/PCB differences.
+This is a CAD-verified design; an assembled PCB has not yet been tested.
+The existing firmware and the original EspCompass project were preserved.

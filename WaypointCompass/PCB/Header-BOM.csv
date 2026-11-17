@@ -1,0 +1,12 @@
+Reference,Quantity,Description,Pitch_mm,Side,Notes
+J1,2,Male header 1x9 straight,2.54,Back,15.24 mm row spacing; solder to both boards; 2.54 mm PCB gap
+J2,1,Male header 1x7 straight,2.54,Front,Direct solder; 2.54 mm gap; GC9A01 TFT; RST CS DC SDA SCL GND VCC
+J3,1,Male header 1x4 straight,2.54,Back,GPS cable; VCC RX TX GND
+J4,1,Male header 1x8 straight,2.54,Back,Direct solder; 2.54 mm gap; GY-521; VCC GND SCL SDA XDA XCL AD0 INT
+J5,1,Male header 1x5 straight,2.54,Back,Direct solder; 2.54 mm gap; GY-271; DRDY SDA SCL GND VCC
+JP1,1,Male header 1x3 straight,2.54,Back,GPS voltage selector
+JP1,1,Jumper shunt 2-pin,2.54,Back,Select exactly one GPS supply
+SW1 SW2,2,Standard 6x6 mm through-hole tactile pushbutton,,Front,Four leads on 6.50 x 4.50 mm spacing; normally open; short actuator
+J3 cable,1,Four-wire female header cable,2.54,Off-board,Wire to GPS VCC RX TX GND
+H1 H2 H3 H4,4,Optional M2 nonmagnetic case fasteners,,Both,2.20 mm carrier holes
+H5 H6,2,Optional M1.6 nonmagnetic TFT supports,,Front,2.00 mm holes; 2.54 mm facing-PCB gap

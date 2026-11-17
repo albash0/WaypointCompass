@@ -1,0 +1,3 @@
+(fp_lib_table
+        (lib (name "CompassCarrier") (type "KiCad")
+            (uri "${KIPRJMOD}/CompassCarrier.pretty") (options "") (descr "Through-hole module sockets")))

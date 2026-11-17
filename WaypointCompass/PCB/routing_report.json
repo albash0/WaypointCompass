@@ -1,0 +1,105 @@
+[
+  {
+    "net": "/BUTTON_1",
+    "pins": 3,
+    "length_mm": 28.81,
+    "vias": 0,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/BUTTON_2",
+    "pins": 3,
+    "length_mm": 29.51,
+    "vias": 0,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/AUX_SCL",
+    "pins": 2,
+    "length_mm": 23.0,
+    "vias": 0,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/AUX_SDA",
+    "pins": 2,
+    "length_mm": 23.01,
+    "vias": 0,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/IMU_SDA",
+    "pins": 2,
+    "length_mm": 27.05,
+    "vias": 0,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/IMU_SCL",
+    "pins": 2,
+    "length_mm": 31.55,
+    "vias": 0,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/3V3",
+    "pins": 6,
+    "length_mm": 87.67,
+    "vias": 0,
+    "width_mm": 0.4
+  },
+  {
+    "net": "/5V_USB",
+    "pins": 2,
+    "length_mm": 31.14,
+    "vias": 2,
+    "width_mm": 0.4
+  },
+  {
+    "net": "/GPS_VCC",
+    "pins": 2,
+    "length_mm": 12.86,
+    "vias": 0,
+    "width_mm": 0.4
+  },
+  {
+    "net": "/TFT_DC",
+    "pins": 2,
+    "length_mm": 58.17,
+    "vias": 1,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/TFT_MOSI",
+    "pins": 2,
+    "length_mm": 62.98,
+    "vias": 1,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/TFT_SCK",
+    "pins": 2,
+    "length_mm": 76.88,
+    "vias": 1,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/GPS_RX",
+    "pins": 2,
+    "length_mm": 38.53,
+    "vias": 2,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/GPS_TX",
+    "pins": 2,
+    "length_mm": 52.21,
+    "vias": 1,
+    "width_mm": 0.25
+  },
+  {
+    "net": "/GND",
+    "pins": 11,
+    "connection": "front and back ground planes"
+  }
+]

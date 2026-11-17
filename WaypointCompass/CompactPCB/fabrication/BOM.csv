@@ -1,0 +1,79 @@
+Reference,Value,MPN,Footprint,Side,Assembly,Notes
+U1,ESP32-S3-MINI-1U-N4R2,ESP32-S3-MINI-1U-N4R2,RF_Module:ESP32-S2-MINI-1U,back,Rear SMT,Optional external 2.4 GHz antenna; no RF used by compass firmware
+U2,LIS2DH12TR,LIS2DH12TR,Package_LGA:LGA-12_2x2mm_P0.5mm,back,Rear SMT,I2C 0x18; +X must be mapped to device front
+U3,LIS2MDLTR,LIS2MDLTR,Package_LGA:LGA-12_2x2mm_P0.5mm,back,Rear SMT,I2C 0x1E; NC pins 2/11/12 left open
+U4,BQ24074RGTR,BQ24074RGTR,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,back,Rear SMT,4.2 V single-cell; fixed 500 mA USB input mode; 100 mA default charge
+U5,TPS63060DSCR,TPS63060DSCR,Package_SON:Texas_S-PWSON-N10,back,Rear SMT,3.3 V buck-boost; forced PWM for predictable sensor noise
+U6,TPS61023DRLR,TPS61023DRLR,Package_TO_SOT_SMD:SOT-563,back,Rear SMT,5 V GPS breakout supply while running from battery
+U7,BQ29700DSET,BQ29700DSET,Package_SON:WSON-6_1.5x1.5mm_P0.5mm,back,Rear SMT,4.275 V / 2.8 V cell protection; cell negative isolated from system GND
+Q1,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,back,Rear SMT,Discharge FET; common drain with Q2
+Q2,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,back,Rear SMT,Charge FET; common drain with Q1
+U8,USBLC6-2SC6,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,back,Rear SMT,USB ESD diode array placed near connector
+J1,USB-C USB2,TYPE-C-31-M-12,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,back,Rear SMT + shell through-hole,USB device; use a 5 V USB source capable of 500 mA
+J2,GC9A01 TFT,Existing 7-pin GC9A01 TFT + straight 2.54 mm header,CompassCarrier:GC9A01_TFT_Socket,front,Front through-hole / manual,"Screen centered (27,20); 2.54 mm straight-header spacer; 5 V supply as on working prototype"
+J3,BATTERY JST-PH2,S2B-PH-K-S(LF)(SN),Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,back,Rear through-hole,Pin 1 positive; 300-1000 mAh 1S 4.2 V-charge Li-ion/LiPo; verify plug polarity
+J4,GPS JST-SH4,SM04B-SRSS-TB(LF)(SN),Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,back,Rear SMT,"New SH cable: VCC,RX,TX,GND; UART is 3.3 V"
+J5,BATTERY NTC,SM02B-SRSS-TB(LF)(SN),Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal,back,Rear SMT,External 10k 103AT-2 thermistor attached to cell; no NTC = charge inhibited
+JP1,GPS 3V3/5V,PCB feature,Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm,back,No component,Bridge 2-3 by default for 5 V breakout; never bridge both sides
+JP2,FAST 250mA,PCB feature,Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm,back,No component,Open=100 mA for 300-500 mAh; bridge=250 mA for 500-1000 mAh cells rated for it
+SW1,CAL/BOOT,B3F-1000,Button_Switch_THT:SW_PUSH_6mm,front,Front through-hole / manual,"Body center (5,7); GPIO0 held on reset enters ROM bootloader"
+SW2,ACTION,B3F-1000,Button_Switch_THT:SW_PUSH_6mm,front,Front through-hole / manual,"Body center (5,33); GPIO2"
+SW3,RESET,TL3342F160QG,Button_Switch_SMD:SW_SPST_TL3342,back,Rear SMT,Rear reset button
+SW4,POWER,JS102011SAQN,Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN,back,Rear SMT,Off grounds regulator enable; charger stays active
+R1,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R2,4.7k,RC0603FR-074K7L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+C1,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+C2,1u,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"1 uF, 10 V, X7R, 0603"
+C3,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+C4,1u,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"1 uF, 10 V, X7R, 0603"
+C5,220n,GRM188R71C224KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"220 nF, 16 V, X7R, 0603"
+R3,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+C6,1u,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"1 uF, 10 V, X7R, 0603"
+R4,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R5,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+C7,10u,GRM21BR61A106KE19L,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"10 uF, 10 V, X5R, 0805"
+C8,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+R6,22,RC0603FR-0722RL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R7,22,RC0603FR-0722RL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R8,5.1k,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R9,5.1k,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+C9,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+R10,330k,RC0603FR-07330KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R11,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+C10,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+R12,8.87k,RC0603FR-078K87L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R13,5.90k,RC0603FR-075K9L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R14,3.16k,RC0603FR-073K16L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; ILIM unused in fixed USB500 mode; populated for defined pin bias"
+R15,71.5k,RC0603FR-0771K5L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; 9.53 h typical timer; 7.15-11.92 h factor limits; 1000 mAh use 250 mA mode"
+C11,1u,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"1 uF, 10 V, X7R, 0603"
+C12,4.7u,GRM188R61A475KE15D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"4.7 uF, 10 V, X5R, 0603"
+C13,4.7u,GRM188R61A475KE15D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"4.7 uF, 10 V, X5R, 0603"
+R16,2.2k,RC0603FR-072K2L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+D1,CHARGE amber,LTST-C190KFKT,LED_SMD:LED_0603_1608Metric,back,Rear SMT,Charge active / fault indicator
+R17,10k,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R18,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+L1,1.5uH >=3A,IFSC1515AHER1R5M01,Inductor_SMD:L_Vishay_IFSC-1515AH_4x4x1.8mm,back,Rear SMT,Vishay shielded 1.5 uH; 3.60 A nominal saturation current; 4 x 4 mm
+C14,10u,GRM21BR61A106KE19L,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"10 uF, 10 V, X5R, 0805"
+C15,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+C16,22u,C2012X5R1A226M125AB,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"22 uF, 10 V, X5R, 0805"
+C17,22u,C2012X5R1A226M125AB,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"22 uF, 10 V, X5R, 0805"
+C18,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+R19,560k,RC0402FR-07560KL,Resistor_SMD:R_0402_1005Metric,back,Rear SMT,"1%, 0402; "
+R20,100k,RC0402FR-07100KL,Resistor_SMD:R_0402_1005Metric,back,Rear SMT,"1%, 0402; "
+L2,1uH >=2A,IHLP1212BZEV1R0M01,Inductor_SMD:L_Vishay_IHLP-1212,back,Rear SMT,Vishay shielded 1 uH IHLP-1212BZ-01; 6.92 A typical saturation; 4.99 A typical thermal rating
+C19,10u,GRM21BR61A106KE19L,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"10 uF, 10 V, X5R, 0805"
+C20,22u,C2012X5R1A226M125AB,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"22 uF, 10 V, X5R, 0805"
+C21,22u,C2012X5R1A226M125AB,Capacitor_SMD:C_0805_2012Metric,back,Rear SMT,"22 uF, 10 V, X5R, 0805"
+R21,732k,RC0603FR-07732KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R22,100k,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R23,330,RC0603FR-07330RL,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+R24,2.2k,RC0603FR-072K2L,Resistor_SMD:R_0603_1608Metric,back,Rear SMT,"1%, 0603; "
+C22,100n,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,back,Rear SMT,"100 nF, 16 V, X7R, 0603"
+TP1,GND,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP2,3V3,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP3,VBAT,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP4,SYS,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP5,GPS_RX,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP6,GPS_TX,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP7,MCU_EN,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,
+TP8,BOOT,PCB feature,TestPoint:TestPoint_Pad_D1.0mm,back,No component,

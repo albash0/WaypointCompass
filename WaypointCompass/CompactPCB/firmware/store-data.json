@@ -1,0 +1,160 @@
+{
+  "retrieved": "2026-10-16",
+  "source": "City of Boulder Liquor Licenses GIS",
+  "source_url": "https://gis.bouldercolorado.gov/ags_svr1/rest/services/plan/LiquorLicenses/MapServer/0/query?where=LICTYPE+%3D+%27Retail+Liquor+Store%27+AND+STATUS+%3D+1&outFields=%2A&returnGeometry=true&outSR=4326&f=json",
+  "notes": "Retail Liquor Store, STATUS=1. Snapshot only; no opening-hours or live closure data. Coordinates are city map points, not surveyed entrances.",
+  "stores": [
+    {
+      "city_object_id": 864,
+      "name": "A-OK LIQUOR",
+      "label": "A-OK Liquor",
+      "address": "2690 28th St, Unit A",
+      "latitude": 40.02707748554754,
+      "longitude": -105.25759261886219
+    },
+    {
+      "city_object_id": 772,
+      "name": "B TOWN WINE AND SPIRITS",
+      "label": "B Town Wine & Spirits",
+      "address": "5360 Arapahoe Ave, Suite C",
+      "latitude": 40.013936409450935,
+      "longitude": -105.22782447111804
+    },
+    {
+      "city_object_id": 819,
+      "name": "Bailey's Wine & Spirits",
+      "label": "Bailey's Wine & Spirits",
+      "address": "4800 Baseline Rd, Unit E-101",
+      "latitude": 39.99832427957666,
+      "longitude": -105.23541601326755
+    },
+    {
+      "city_object_id": 931,
+      "name": "BASELINE LIQUOR",
+      "label": "Baseline Liquor",
+      "address": "2750 Baseline Rd",
+      "latitude": 39.999486061666836,
+      "longitude": -105.25912854781443
+    },
+    {
+      "city_object_id": 754,
+      "name": "BOULDER BEER & LIQUOR EMPORIUM",
+      "label": "Boulder Beer & Liquor",
+      "address": "4700 Table Mesa Dr",
+      "latitude": 39.984603933585554,
+      "longitude": -105.23916359562554
+    },
+    {
+      "city_object_id": 815,
+      "name": "Boulder Wine and Spirits",
+      "label": "Boulder Wine & Spirits",
+      "address": "3325 28th St, Unit 3",
+      "latitude": 40.035512077810836,
+      "longitude": -105.25989859506872
+    },
+    {
+      "city_object_id": 763,
+      "name": "BOULDER WINE MERCHANT",
+      "label": "Boulder Wine Merchant",
+      "address": "2690 Broadway",
+      "latitude": 40.025337978285336,
+      "longitude": -105.2811661176306
+    },
+    {
+      "city_object_id": 930,
+      "name": "Broadway Wine and Spirits",
+      "label": "Broadway Wine & Spirits",
+      "address": "2550 Baseline Rd",
+      "latitude": 39.99874665666557,
+      "longitude": -105.26161560631354
+    },
+    {
+      "city_object_id": 771,
+      "name": "GUNBARREL LIQUOR",
+      "label": "Gunbarrel Liquor",
+      "address": "6566 Lookout Rd",
+      "latitude": 40.0722186817474,
+      "longitude": -105.20064410193199
+    },
+    {
+      "city_object_id": 860,
+      "name": "Harvest Wine & Spirits",
+      "label": "Harvest Wine & Spirits",
+      "address": "3075 Arapahoe Ave, Unit A",
+      "latitude": 40.01514823714687,
+      "longitude": -105.25199549519192
+    },
+    {
+      "city_object_id": 898,
+      "name": "HAZEL'S BEVERAGE WORLD",
+      "label": "Hazel's",
+      "address": "1955 28th St",
+      "latitude": 40.02088380204291,
+      "longitude": -105.25983371993159
+    },
+    {
+      "city_object_id": 911,
+      "name": "NORTH BOULDER LIQUOR",
+      "label": "North Boulder Liquor",
+      "address": "3990 N Broadway",
+      "latitude": 40.047544265478415,
+      "longitude": -105.28183172012379
+    },
+    {
+      "city_object_id": 813,
+      "name": "Persona Wine",
+      "label": "Persona Wine",
+      "address": "2299 Pearl St, Suite 6",
+      "latitude": 40.02108154138305,
+      "longitude": -105.26592630591388
+    },
+    {
+      "city_object_id": 879,
+      "name": "Pettyjohn's Liquor & Wine",
+      "label": "Pettyjohn's",
+      "address": "613 S Broadway",
+      "latitude": 39.984431906361635,
+      "longitude": -105.25006792102651
+    },
+    {
+      "city_object_id": 947,
+      "name": "ROSE HILL WINE & SPIRITS",
+      "label": "Rose Hill Wine & Spirits",
+      "address": "1089 13th St",
+      "latitude": 40.00714419638432,
+      "longitude": -105.27640658294835
+    },
+    {
+      "city_object_id": 984,
+      "name": "Sundry Wine N Liquor",
+      "label": "Sundry Wine N Liquor",
+      "address": "3303 Bluff St, Suite RS-2",
+      "latitude": 40.0278723674884,
+      "longitude": -105.2504152276298
+    },
+    {
+      "city_object_id": 809,
+      "name": "WEST END WINE SHOP",
+      "label": "West End Wine Shop",
+      "address": "777 Pearl St, Unit C",
+      "latitude": 40.01687967683695,
+      "longitude": -105.2855443124264
+    },
+    {
+      "city_object_id": 932,
+      "name": "WHOLE FOODS WINE AND SPIRITS",
+      "label": "Whole Foods Wine",
+      "address": "2315 30th St",
+      "latitude": 40.02399257706277,
+      "longitude": -105.25522123426825
+    },
+    {
+      "city_object_id": 759,
+      "name": "Williams Village Liquor",
+      "label": "Williams Village",
+      "address": "655 30th St",
+      "latitude": 39.998976095933955,
+      "longitude": -105.25361537562945
+    }
+  ]
+}

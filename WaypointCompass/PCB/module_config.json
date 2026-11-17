@@ -1,0 +1,920 @@
+{
+  "status": "Header pin orders supplied by user; TFT dimensions from supplied module drawing; IMU/magnetometer body envelopes nominal",
+  "board": [
+    100,
+    100,
+    60,
+    40
+  ],
+  "mounting_holes": [
+    [
+      103,
+      103
+    ],
+    [
+      157,
+      103
+    ],
+    [
+      103,
+      137
+    ],
+    [
+      157,
+      137
+    ]
+  ],
+  "tft_holes": [
+    [
+      150.67,
+      110.37
+    ],
+    [
+      150.67,
+      129.63
+    ]
+  ],
+  "modules": [
+    {
+      "ref": "J1",
+      "value": "ESP32-S3 SuperMini",
+      "footprint": "ESP32_S3_SuperMini_2x09_Sockets",
+      "side": "back",
+      "pcb_at": [
+        118.5,
+        113
+      ],
+      "schematic_at": [
+        76.2,
+        40.64
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "TX / GPIO43",
+          "net": "GPS_RX",
+          "at": [
+            -7.62,
+            -10.16
+          ]
+        },
+        {
+          "number": "2",
+          "name": "RX / GPIO44",
+          "net": "GPS_TX",
+          "at": [
+            -7.62,
+            -7.62
+          ]
+        },
+        {
+          "number": "3",
+          "name": "GPIO1",
+          "net": "BUTTON_1",
+          "at": [
+            -7.62,
+            -5.08
+          ]
+        },
+        {
+          "number": "4",
+          "name": "GPIO2",
+          "net": "BUTTON_2",
+          "at": [
+            -7.62,
+            -2.54
+          ]
+        },
+        {
+          "number": "5",
+          "name": "GPIO3",
+          "net": null,
+          "at": [
+            -7.62,
+            0.0
+          ]
+        },
+        {
+          "number": "6",
+          "name": "GPIO4",
+          "net": null,
+          "at": [
+            -7.62,
+            2.54
+          ]
+        },
+        {
+          "number": "7",
+          "name": "GPIO5",
+          "net": null,
+          "at": [
+            -7.62,
+            5.08
+          ]
+        },
+        {
+          "number": "8",
+          "name": "GPIO6",
+          "net": null,
+          "at": [
+            -7.62,
+            7.62
+          ]
+        },
+        {
+          "number": "9",
+          "name": "GPIO7",
+          "net": null,
+          "at": [
+            -7.62,
+            10.16
+          ]
+        },
+        {
+          "number": "10",
+          "name": "5V / USB",
+          "net": "5V_USB",
+          "at": [
+            7.62,
+            -10.16
+          ]
+        },
+        {
+          "number": "11",
+          "name": "GND",
+          "net": "GND",
+          "at": [
+            7.62,
+            -7.62
+          ]
+        },
+        {
+          "number": "12",
+          "name": "3V3",
+          "net": "3V3",
+          "at": [
+            7.62,
+            -5.08
+          ]
+        },
+        {
+          "number": "13",
+          "name": "GPIO13",
+          "net": "TFT_DC",
+          "at": [
+            7.62,
+            -2.54
+          ]
+        },
+        {
+          "number": "14",
+          "name": "GPIO12",
+          "net": null,
+          "at": [
+            7.62,
+            0.0
+          ]
+        },
+        {
+          "number": "15",
+          "name": "GPIO11",
+          "net": "TFT_MOSI",
+          "at": [
+            7.62,
+            2.54
+          ]
+        },
+        {
+          "number": "16",
+          "name": "GPIO10",
+          "net": "TFT_SCK",
+          "at": [
+            7.62,
+            5.08
+          ]
+        },
+        {
+          "number": "17",
+          "name": "GPIO9",
+          "net": "IMU_SCL",
+          "at": [
+            7.62,
+            7.62
+          ]
+        },
+        {
+          "number": "18",
+          "name": "GPIO8",
+          "net": "IMU_SDA",
+          "at": [
+            7.62,
+            10.16
+          ]
+        }
+      ],
+      "courtyard": [
+        -9.25,
+        -12.1,
+        9.25,
+        12.1
+      ],
+      "socket_outlines": [
+        [
+          -8.92,
+          -11.46,
+          -6.32,
+          11.46
+        ],
+        [
+          6.32,
+          -11.46,
+          8.92,
+          11.46
+        ]
+      ],
+      "body": [
+        -9,
+        -11.75,
+        9,
+        11.75
+      ],
+      "ref_at": [
+        0,
+        0
+      ],
+      "labels": [
+        [
+          "USB",
+          0,
+          -10,
+          0.8
+        ],
+        [
+          "J1 ESP32-S3",
+          0,
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "GC9A01 TFT",
+      "footprint": "GC9A01_TFT_Socket",
+      "side": "front",
+      "pcb_at": [
+        154.74,
+        120
+      ],
+      "schematic_at": [
+        152.4,
+        40.64
+      ],
+      "pins": [
+        {
+          "number": "7",
+          "name": "RST",
+          "net": "3V3",
+          "at": [
+            -7.62,
+            0
+          ]
+        },
+        {
+          "number": "6",
+          "name": "CS",
+          "net": "GND",
+          "at": [
+            -5.08,
+            0
+          ]
+        },
+        {
+          "number": "5",
+          "name": "DC",
+          "net": "TFT_DC",
+          "at": [
+            -2.54,
+            0
+          ]
+        },
+        {
+          "number": "4",
+          "name": "SDA / DIN",
+          "net": "TFT_MOSI",
+          "at": [
+            0.0,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "name": "SCL / CLK",
+          "net": "TFT_SCK",
+          "at": [
+            2.54,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "at": [
+            5.08,
+            0
+          ]
+        },
+        {
+          "number": "1",
+          "name": "VCC",
+          "net": "3V3",
+          "at": [
+            7.62,
+            0
+          ]
+        }
+      ],
+      "courtyard": [
+        -9.22,
+        -1.7,
+        9.22,
+        1.7
+      ],
+      "socket_outlines": [
+        [
+          -8.92,
+          -1.3,
+          8.92,
+          1.3
+        ]
+      ],
+      "ref_at": [
+        0,
+        -3
+      ],
+      "labels": [],
+      "body": [
+        -19,
+        -43.74,
+        19,
+        1.76
+      ],
+      "rotation": 90,
+      "circles": [
+        [
+          0,
+          -24.74,
+          19
+        ],
+        [
+          0,
+          -24.74,
+          16.2
+        ]
+      ]
+    },
+    {
+      "ref": "J3",
+      "value": "GPS CABLE",
+      "footprint": "GPS_CABLE_Socket",
+      "side": "back",
+      "pcb_at": [
+        111.43,
+        133.02
+      ],
+      "schematic_at": [
+        228.6,
+        40.64
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCC",
+          "net": "GPS_VCC",
+          "at": [
+            -3.81,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "name": "RX",
+          "net": "GPS_RX",
+          "at": [
+            -1.27,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "name": "TX",
+          "net": "GPS_TX",
+          "at": [
+            1.27,
+            0
+          ]
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND",
+          "at": [
+            3.81,
+            0
+          ]
+        }
+      ],
+      "courtyard": [
+        -5.41,
+        -1.7,
+        5.41,
+        1.7
+      ],
+      "socket_outlines": [
+        [
+          -5.11,
+          -1.3,
+          5.11,
+          1.3
+        ]
+      ],
+      "ref_at": [
+        0,
+        -3
+      ],
+      "labels": [
+        [
+          "J3 GPS",
+          0,
+          -3,
+          0.8
+        ],
+        [
+          "VCC RX TX GND",
+          0,
+          3,
+          0.8
+        ]
+      ]
+    },
+    {
+      "ref": "J4",
+      "value": "GY-521",
+      "footprint": "GY_521_Socket",
+      "side": "back",
+      "pcb_at": [
+        138.5,
+        122.86
+      ],
+      "schematic_at": [
+        152.4,
+        106.68
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCC",
+          "net": "3V3",
+          "at": [
+            -8.89,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "at": [
+            -6.35,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "name": "SCL",
+          "net": "IMU_SCL",
+          "at": [
+            -3.81,
+            0
+          ]
+        },
+        {
+          "number": "4",
+          "name": "SDA",
+          "net": "IMU_SDA",
+          "at": [
+            -1.27,
+            0
+          ]
+        },
+        {
+          "number": "5",
+          "name": "XDA",
+          "net": "AUX_SDA",
+          "at": [
+            1.27,
+            0
+          ]
+        },
+        {
+          "number": "6",
+          "name": "XCL",
+          "net": "AUX_SCL",
+          "at": [
+            3.81,
+            0
+          ]
+        },
+        {
+          "number": "7",
+          "name": "AD0",
+          "net": "GND",
+          "at": [
+            6.35,
+            0
+          ]
+        },
+        {
+          "number": "8",
+          "name": "INT",
+          "net": null,
+          "at": [
+            8.89,
+            0
+          ]
+        }
+      ],
+      "courtyard": [
+        -10.49,
+        -1.7,
+        10.49,
+        1.7
+      ],
+      "socket_outlines": [
+        [
+          -10.19,
+          -1.3,
+          10.19,
+          1.3
+        ]
+      ],
+      "ref_at": [
+        0,
+        -3
+      ],
+      "labels": [
+        [
+          "J4 GY-521",
+          0,
+          7,
+          1
+        ],
+        [
+          "+X FRONT",
+          0,
+          10,
+          0.8
+        ]
+      ],
+      "body": [
+        -10,
+        0,
+        10,
+        16
+      ]
+    },
+    {
+      "ref": "J5",
+      "value": "GY-271",
+      "footprint": "GY_271_Socket",
+      "side": "back",
+      "pcb_at": [
+        141,
+        102.54
+      ],
+      "schematic_at": [
+        228.6,
+        106.68
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "DRDY / DD0Y",
+          "net": null,
+          "at": [
+            -5.08,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "name": "SDA",
+          "net": "AUX_SDA",
+          "at": [
+            -2.54,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "name": "SCL",
+          "net": "AUX_SCL",
+          "at": [
+            0.0,
+            0
+          ]
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND",
+          "at": [
+            2.54,
+            0
+          ]
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "net": "3V3",
+          "at": [
+            5.08,
+            0
+          ]
+        }
+      ],
+      "courtyard": [
+        -6.68,
+        -1.7,
+        6.68,
+        1.7
+      ],
+      "socket_outlines": [
+        [
+          -6.38,
+          -1.3,
+          6.38,
+          1.3
+        ]
+      ],
+      "ref_at": [
+        0,
+        -3
+      ],
+      "labels": [
+        [
+          "J5 GY-271",
+          0,
+          7,
+          1
+        ],
+        [
+          "+X FRONT",
+          0,
+          10,
+          0.8
+        ]
+      ],
+      "body": [
+        -7.5,
+        0,
+        7.5,
+        18
+      ]
+    },
+    {
+      "ref": "JP1",
+      "value": "GPS VOLTAGE",
+      "footprint": "GPS_VOLTAGE_Socket",
+      "side": "back",
+      "pcb_at": [
+        125.4,
+        133.02
+      ],
+      "schematic_at": [
+        76.2,
+        106.68
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "3V3",
+          "net": "3V3",
+          "at": [
+            -2.54,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "name": "GPS VCC",
+          "net": "GPS_VCC",
+          "at": [
+            0.0,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "name": "5V USB",
+          "net": "5V_USB",
+          "at": [
+            2.54,
+            0
+          ]
+        }
+      ],
+      "courtyard": [
+        -4.14,
+        -1.7,
+        4.14,
+        1.7
+      ],
+      "socket_outlines": [
+        [
+          -3.84,
+          -1.3,
+          3.84,
+          1.3
+        ]
+      ],
+      "ref_at": [
+        0,
+        -3
+      ],
+      "labels": [
+        [
+          "JP1",
+          0,
+          -3,
+          0.8
+        ],
+        [
+          "3V3  V  5V",
+          0,
+          3,
+          0.8
+        ]
+      ]
+    },
+    {
+      "ref": "SW1",
+      "value": "6x6 tactile",
+      "kind": "button",
+      "footprint": "SW_PUSH_6mm",
+      "side": "front",
+      "pcb_at": [
+        101.75,
+        109.25
+      ],
+      "schematic_at": [
+        76.2,
+        152.4
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "BUTTON_1",
+          "net": "BUTTON_1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND"
+        }
+      ],
+      "physical_pads": [
+        {
+          "number": "1",
+          "at": [
+            0,
+            0
+          ]
+        },
+        {
+          "number": "1",
+          "at": [
+            6.5,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0,
+            4.5
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            6.5,
+            4.5
+          ]
+        }
+      ],
+      "labels": [
+        [
+          "SW1",
+          3.25,
+          -4.5,
+          0.8
+        ]
+      ],
+      "body_center": [
+        105,
+        111.5
+      ]
+    },
+    {
+      "ref": "SW2",
+      "value": "6x6 tactile",
+      "kind": "button",
+      "footprint": "SW_PUSH_6mm",
+      "side": "front",
+      "pcb_at": [
+        101.75,
+        124.75
+      ],
+      "schematic_at": [
+        152.4,
+        152.4
+      ],
+      "pins": [
+        {
+          "number": "1",
+          "name": "BUTTON_2",
+          "net": "BUTTON_2"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND"
+        }
+      ],
+      "physical_pads": [
+        {
+          "number": "1",
+          "at": [
+            0,
+            0
+          ]
+        },
+        {
+          "number": "1",
+          "at": [
+            6.5,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            0,
+            4.5
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            6.5,
+            4.5
+          ]
+        }
+      ],
+      "labels": [
+        [
+          "SW2",
+          3.25,
+          -4.5,
+          0.8
+        ]
+      ],
+      "body_center": [
+        105,
+        127
+      ]
+    }
+  ],
+  "board_text": [
+    [
+      "WAYPOINT COMPASS",
+      130,
+      136.5,
+      0.9
+    ],
+    [
+      "60 x 40 / REV B",
+      130,
+      138,
+      0.8
+    ],
+    [
+      "J2 TFT",
+      149.5,
+      135,
+      0.9
+    ]
+  ]
+}
